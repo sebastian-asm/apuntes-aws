@@ -3,12 +3,12 @@
 ## Principales servicios de AWS
 
 - **EC2**: encargado de administrar las instancias (VM, server, etc)
-- **RDS**: administrar bases de datos relacionales
-- **S3**: almacenamiento estático
+- **S3**: almacenamiento estático (ilimitado)
 - **CloudFront**: servicio encargado de manejar los CDN (replicar los recursos estáticos en las diferentes regiones)
+- **RDS**: administrar bases de datos relacionales
 - **Elastic Beanstalk**: administrar otros servicios de forma automática, dependiendo de las reglas que se especifiquen
 
-## EC2
+## EC2 (Elastic Compute Cloud)
 
 - T2, T3, T3a, etc: son diferentes familias de rendimiento general en cuanto a CPU y RAM, por ejemplo para un servidor web.
 - Direcciones IP elásticas: permite asignar una IP pública y fija a una instancia
@@ -46,3 +46,12 @@ Guía: [Ampliar el espacio de disco duro en ubuntu (AWS EC2)](https://codigoenca
 - _"Las instancias necesitan"_: tiempo que la CPU se mantien por arriba del valor de destino, esto hará que se apliquen las reglas para agregar instancia o eliminar cuando el uso de CPU baja
 
 Realizar pruebas de carga: [Vegeta](https://github.com/tsenart/vegeta)
+
+## S3 (Simple Storage Service)
+
+Es un servicio que permite escalabilidad, disponibilidad de datos, seguridad y rendimiento.
+
+Servicios:
+
+- Bucket: contenedores de objetos (archivos)
+- Hosting: servicio web para sitio estáticos

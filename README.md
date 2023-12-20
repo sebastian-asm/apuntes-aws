@@ -7,6 +7,8 @@
 - **CloudFront**: servicio encargado de manejar los CDN (replicar los recursos estáticos en las diferentes regiones)
 - **RDS**: administrar bases de datos relacionales
 - **Elastic Beanstalk**: administrar otros servicios de forma automática, dependiendo de las reglas que se especifiquen
+- **AWS Certificate Manage**: generar certificados SSL
+- **AIM**: permite administrar los accesos de usuarios, grupos, roles, etc
 
 ## EC2 (Elastic Compute Cloud)
 
@@ -55,3 +57,11 @@ Servicios:
 
 - Bucket: contenedores de objetos (archivos)
 - Hosting: servicio web para sitio estáticos
+
+## CloudFront (CDN)
+
+El CDN puede ayudar a mejorar el rendimiento del sitio web aumentado su disponibilidad rápidamente, esto se hace replicando los archivos del sitio en diferentes servidores alrededor del mundo.
+
+## AIM
+
+Existen diferentes tipos de usuarios: con acceso a la consola o los usuarios programáticos (que representan una API KEY mediante una app), a estos se les pueden asignar accesos únicamente a aquellos servicios que se van a consumir mediante las políticias y ordenar a través de grupos.

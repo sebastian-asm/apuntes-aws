@@ -24,11 +24,9 @@ Instancias:
 
 Para conectarse a una instancia con Ubuntu a través de su IP pública y utilizando SSH:
 
-```
-ssh {usuario_root}@{ip_publica} -i {path_archivo_pem}
+`ssh {usuario_root}@{ip_publica} -i {path_archivo_pem}`
 
-Ejemplo: ssh ubunto@18.117.122.96 -i ./Downloads/archivo.pem
-```
+Ejemplo: `ssh ubunto@18.117.122.96 -i ./Downloads/archivo.pem`
 
 Comandos básicos en Ubuntu:
 
@@ -42,7 +40,7 @@ Guía: [Ampliar el espacio de disco duro en ubuntu (AWS EC2)](https://codigoenca
 
 **LoadBalancer (balanceador DNS)**: distribuir la carga de peticiones en diferentes instancias, agregar instancias de forma manual al grupo que conecta con el balanceador o de forma automatica a medida que se vayan necesitando más instancias.
 
-**AutoScaling**: escalar automáticamente nuestra infraestructura (agregando o quitando instancias).
+**AutoScaling**: escalar automáticamente nuestra infraestructura (agregando o quitando instancias, estableciendo las mínimas y las máximas).
 
 - _"Valor de destino"_: uso de la CPU
 - _"Las instancias necesitan"_: tiempo que la CPU se mantien por arriba del valor de destino, esto hará que se apliquen las reglas para agregar instancia o eliminar cuando el uso de CPU baja
@@ -74,3 +72,7 @@ Además, se debe habilitar el acceso creando una nueva regla en el grupo de segu
 
 - Escalamiento horizontal: es una forma de mejorar el rendimiento y la disponibilidad de una app al agregar más servidores que trabajan en conjunto como un solo sistema
 - Escalamiento vertical: es una forma de mejorar el rendimiento y la disponibilidad de una aplicación al aumentar los recursos de un solo servidor, como la memoria, la CPU o el almacenamiento
+
+## Elastic Beanstalk
+
+Esta infraestructura nos permite un historial de cambios para hacer un rollback en caso de tener algún problema con un despliegue actual. Para agregar variables de entorno, se hace desde la opción de _configuración_, luego en _software_ y editar.

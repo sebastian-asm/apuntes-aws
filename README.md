@@ -65,3 +65,12 @@ El CDN puede ayudar a mejorar el rendimiento del sitio web aumentado su disponib
 ## AIM
 
 Existen diferentes tipos de usuarios: con acceso a la consola o los usuarios programáticos (que representan una API KEY mediante una app), a estos se les pueden asignar accesos únicamente a aquellos servicios que se van a consumir mediante las políticias y ordenar a través de grupos.
+
+# RDS
+
+Este servicio permite configurar, operar y escalar bases de relaciones como: Postgres, MySQL, MariaDB, SQL Server entre otros. Entre algunas de las opciones, la de _Acceso público_ indica que se puede acceder a la db desde algún gestor como por ejemplo Workbench.
+
+Además, se debe habilitar el acceso creando una nueva regla en el grupo de seguridad _Inbound_ indicando el **tipo**, por ejemplo el protocolo de Postgres, y luego el **origen**, o sea, las IPs que se podrán conectar a la db.
+
+- Escalamiento horizontal: es una forma de mejorar el rendimiento y la disponibilidad de una app al agregar más servidores que trabajan en conjunto como un solo sistema
+- Escalamiento vertical: es una forma de mejorar el rendimiento y la disponibilidad de una aplicación al aumentar los recursos de un solo servidor, como la memoria, la CPU o el almacenamiento
